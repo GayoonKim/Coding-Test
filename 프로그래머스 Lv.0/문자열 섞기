@@ -1,0 +1,13 @@
+import Foundation
+
+var words: [String] = ["One", "Two", "Three", "Four"]
+var numbers = 1...4
+
+for (word, number) in zip(words, numbers) {
+    print("\(word): \(number)")
+}
+
+// One: 1
+// Two: 2
+// Three: 3
+// Four: 4
