@@ -1,13 +1,13 @@
 import Foundation
 
-var words: [String] = ["One", "Two", "Three", "Four"]
-var numbers = 1...4
-
-for (word, number) in zip(words, numbers) {
-    print("\(word): \(number)")
+func solution(_ str1:String, _ str2:String) -> String {
+    
+    var result: String = ""
+    
+    for (first, second) in zip(str1, str2) {
+        result.append(first)
+        result.append(second)
+    }
+    
+    return result
 }
-
-// One: 1
-// Two: 2
-// Three: 3
-// Four: 4
